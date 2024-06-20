@@ -6,6 +6,8 @@ import { Router } from 'express'
 const server = Router();
 const upload = multer({ dest: 'storage/capasFilmes' })
 
+<br> 
+
 
 server.put('/anime/img', upload.single('capa'), async (req, resp) => {
     try {
